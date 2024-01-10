@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo</title>
+  <!-- 请勿在项目正式环境中引用该 layui.css 地址 -->
+  <link href="D:\qazwse\sba\GitHub\Peruser-SchoolWebsiteTemplate\Peruser\layui-v2.9.3\layui\css\layui.css" rel="stylesheet">
+</head>
+<body>
+    <ul class="layui-nav">
+        <li class="layui-nav-item layui-this"><a href="Untitled-1.html">主页</a></li>
+        <li class="layui-nav-item">
+          <a href="Untitled-3.html">投票</a>
+        </li>
+        <li class="layui-nav-item"><a href="Un.html">上课时间表</a></li>
+        <li class="layui-nav-item">
+          <a href="个人信息.html">个人简介</a>
+         
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">学生</a>
+          <dl class="layui-nav-child">
+            <dd><a href="//D:/qazwse/sba/GitHub/Peruser-SchoolWebsiteTemplate/Peruser/login-form/index.html">登出</a></dd>
+            <dd><a href="D:\qazwse\sba\GitHub\Peruser-SchoolWebsiteTemplate\Peruser\index.html">回去学校网站</a></dd>
+          </dl>
+        </li>
+        
+      </ul>
+      <div class="ws-demo-static">
+        <ul class="layui-nav layui-bg-gray">
+            <li class="layui-nav-item"><a href="Untitled-1.html">日期</a></li>
+            <li class="layui-nav-item"><a href="Untitled-2.html">本月事项</a></li>
+            
+            </li>
+            <div class="ws-demo-static">
+                <div class="layui-inline" id="ID-laydate-static-1"></div>
+        
+
+        
+<table class="layui-table">
+  <colgroup>
+    <col width="300">
+    <col width="1">
+    <col>
+  </colgroup>
+  <thead>
+    <tr>
+      
+      <th><p align="center">公告</p></th>
+      
+    </tr> 
+  </thead>
+  <tbody>
+    <tr>
+      <td><p align="center"><a href="#">2023-12-06中六级圣诞节假期奋进计划</p></td>
+      </a>
+     
+    </tr>
+    <tr>
+      <td><p align="center"><a href="#">2024-1-01中六级文凭试校本评核（SBA)通告</a></p></td>
+      
+    </tr>
+    <tr><td><p align="center"><a href="#">2024-01-02关注子女身心以及精神健康</a></p></td></tr>
+  </tbody>
+</table>
+      </div>
+        
+      
+
+  
+<!-- 请勿在项目正式环境中引用该 layui.js 地址 -->
+<script src="D:\qazwse\sba\GitHub\Peruser-SchoolWebsiteTemplate\Peruser\layui-v2.9.3\layui\layui.js"></script>
+<script>
+    layui.use(function(){
+  var laydate = layui.laydate;
+  // 直接嵌套显示
+  laydate.render({
+    elem: '#ID-laydate-static-1',
+    position: 'static'
+  });
+});
+    </script>
+ 
+</body>
+</html>

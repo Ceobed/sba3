@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo</title>
+  <!-- 请勿在项目正式环境中引用该 layui.css 地址 -->
+  <link href="D:\qazwse\sba\GitHub\Peruser-SchoolWebsiteTemplate\Peruser\layui-v2.9.3\layui\css\layui.css" rel="stylesheet">
+</head>
+<body>
+<ul class="layui-nav">
+  <li class="layui-nav-item layui-this">全世界最受欢迎的歌手投票</li>
+  
+</ul>
+<div class="layui-form layui-row layui-col-space16">
+    <div class="layui-col-md6">
+      <select lay-search="">
+        
+        <option value="">地区</option>
+        <option value="1">东南亚</option>
+        <option value="2">亞洲</option>
+        <option value="3">歐洲</option>
+        <option value="4">北美洲</option>
+       
+      </select>
+    </div>
+    <div class="layui-col-md6">
+      <select lay-search="cs">
+        <option value="">年龄</option>
+        <option value="1">17岁以下</option>
+        <option value="2">18岁-27岁</option>
+        <option value="3">28岁-50岁</option>
+        <option value="4">50岁-77岁</option>
+        
+      </select>
+    </div>
+    <div class="layui-form">
+        <p>最多能选择5名</p>
+        <p><input type="checkbox" name="AAA" title="艾琳娜·维多利亚 (Elena Victoria)" lay-skin="tag"></p>
+        <br><p><input type="checkbox" name="AAA" title="凯文·艾弗森 (Kevin Aversen)" lay-skin="tag"></br></p>
+        <br><p><input type="checkbox" name="AAA" title="莉莉安·海特 (Lilian Hite)" lay-skin="tag"></br></p>
+        <br><p><input type="checkbox" name="AAA" title="马克斯·艾弗斯 (Max Evans)" lay-skin="tag"></br></p>
+        
+        <br><p><input type="checkbox" name="AAA" title="维多利亚·雷恩 (Victoria Lane)" lay-skin="tag"></br></p>
+        <br><p><input type="checkbox" name="AAA" title="亚历克斯·斯诺 (Alex Snow)" lay-skin="tag"></br></p>
+        <br><p><input type="checkbox" name="AAA" title="艾莉丝·罗斯 (Alice Rose)" lay-skin="tag"></br></p>
+        <br><p><input type="checkbox" name="AAA" title="卡梅伦·布鲁克斯 (Cameron Brooks)" lay-skin="tag"></br></p>
+        <br><p><input type="checkbox" name="AAA" title="莉娜·海特利 (Lina Haytley)" lay-skin="tag"></br></p>
+        <br><p><input type="checkbox" name="AAA" title="迈克尔·凯恩 (Michael Kane)" lay-skin="tag"></br></p>
+        <div class="layui-btn-container">
+            <br><button type="button" class="layui-btn layui-btn-primary" lay-on="test-confirm">确定</button><div class="layui-btn-container">
+                <a href="Untitled-1.html" class="layui-btn layui-btn-primary layui-border" >主页</a></button>
+            </div></div></br>
+           
+      </div>
+      </div>
+    
+  </div>
+<!-- 请勿在项目正式环境中引用该 layui.js 地址 -->
+<script src="D:\qazwse\sba\GitHub\Peruser-SchoolWebsiteTemplate\Peruser\layui-v2.9.3\layui\layui.js"></script>
+<script>
+    layui.use(function(){
+      var layer = layui.layer;
+      var util = layui.util;
+      // 事件
+      util.on('lay-on', {
+"test-confirm": function(){
+    layer.confirm('你真的选好了吗？', {icon: 3}, function(){
+      layer.msg('投票完成，可以选择主页以能回到主页', {icon: 1});
+    }, function(){
+      layer.msg('点击取消的回调');
+    });
+}
+  })
+});
+
+  
+  </script>
+
+ 
+</body>
+</html>

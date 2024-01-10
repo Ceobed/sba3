@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo</title>
+  <!-- 请勿在项目正式环境中引用该 layui.css 地址 -->
+  <link href="D:\qazwse\sba\GitHub\Peruser-SchoolWebsiteTemplate\Peruser\layui-v2.9.3\layui\css\layui.css" rel="stylesheet">
+</head>
+<body>
+  <ul class="layui-nav" >
+    <li class="layui-nav-item "><a href="Untitled-1.html">主页</a></li>
+    <li class="layui-nav-item">
+      <a href="D:\qazwse\sba\GitHub\Peruser-SchoolWebsiteTemplate\Peruser\家长内联网\Untitled-.html">通告</a>
+    </li>
+    <li class="layui-nav-item "><a href="Un.html">上课时间表</a></li>
+    <li class="layui-nav-item">
+      <a href="个人信息.html">个人简介</a>
+     
+    </li>
+    <li class="layui-nav-item">
+      <a href="javascript:;">家长</a>
+      <dl class="layui-nav-child">
+        <dd><a href="//D:/qazwse/sba/GitHub/Peruser-SchoolWebsiteTemplate/Peruser/login-form/index.html">登出</a></dd>
+        <dd><a href="D:\qazwse\sba\GitHub\Peruser-SchoolWebsiteTemplate\Peruser\index.html">回去学校网站</a></dd>
+      </dl>
+    </li>
+    </ul>
+   <a href="D:\qazwse\sba\GitHub\Peruser-SchoolWebsiteTemplate\Peruser\家长内联网\Untitled-.html">回到上一页面</a>
+   <br><br><h1 align="center">紧急校园安全通告</p><br><br>
+    <p align="center">紧急通知！根据警方的建议，由于附近地区发生了一起安全事件，我校决定暂停所有户外活动和课外班，直至另行通知。所有学生和教职员工请留在校园内，并确保门窗关闭，保持警惕。我们将加强校园安全措施，并与警方保持密切联系。感谢大家的理解与合作！</p>
+    <div class="layui-btn-container">
+        <br><button type="button" class="layui-btn layui-btn-primary" lay-on="test-confirm">签署</button></br>
+  </div>
+    
+  
+<!-- 请勿在项目正式环境中引用该 layui.js 地址 -->
+<script src="D:\qazwse\sba\GitHub\Peruser-SchoolWebsiteTemplate\Peruser\layui-v2.9.3\layui\layui.js"></script>
+<script>
+    layui.use(function(){
+      var layer = layui.layer;
+      var util = layui.util;
+      // 事件
+      util.on('lay-on', {
+"test-confirm": function(){
+    layer.confirm('确定签署', {icon: 3}, function(){
+      layer.msg('感谢签署', {icon: 1});
+    }, function(){
+      layer.msg('点击取消的回调');
+    });
+}
+  })
+});
+
+  
+  </script>
+  <script>
+    layui.use(function(){
+      var layer = layui.layer;
+      var util = layui.util;
+      // 批量事件
+      util.on('lay-on', {
+        alert: function(){
+          layer.alert('对话框内容');
+        },
+    });
+      });
+    </script>
+
+
+
+ 
+</body>
+</html>
